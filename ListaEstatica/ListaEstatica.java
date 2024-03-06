@@ -1,4 +1,4 @@
-package com.estrutura;
+package ed;
 
 public class ListaEstatica {
  
@@ -21,9 +21,9 @@ public class ListaEstatica {
     public void setInfo(int[]info){
         this.info = info;
     }
+
     private void redimensionar(){
-        int newTamanho = getTamanho() + 10;
-        int [] newInfo = new int[newTamanho]; 
+        int [] newInfo = new int[getTamanho() + 10]; 
 
         for (int i = 0; i < info.length; i++) {
             newInfo[i] = getInfo()[i];
@@ -32,8 +32,7 @@ public class ListaEstatica {
     }
 
     public void inserir(int value){
-        
-        if(getTamanho() <= getInfo().length){
+        if(getTamanho() == getInfo().length){
             redimensionar();  
         }
         getInfo()[getTamanho()] = value;
@@ -55,43 +54,39 @@ public class ListaEstatica {
         return -1;
     }
     public void retirar(int value){
-        for (int i = 0; i < getTamanho(); i++) {
-            if(getInfo()[i] == value){
-                for (int j = i; j <= getTamanho(); j++) {
-                    getInfo()[j] = getInfo()[j+1];
-                }
-                i = getTamanho();
-                tamanho--;
+        int posicao = buscar(value);
+
+        if(posicao > -1){
+            for (int i = posicao+1; i < getTamanho(); i++) {
+                getInfo()[i-1] = getInfo()[i];
             }
+            tamanho--;        
         }
     }
     public void liberar(){
-        int [] newInfo = new int[10]; 
-        setInfo(newInfo);
+        setInfo(new int[10]);
+        tamanho = 0;
     }
     public int obterElemento(int position){
         if(position > getTamanho() || getInfo()[position] == 0){
             throw new IndexOutOfBoundsException();
         }
-        return getInfo()[position];
+        return getInfo()[position]; 
     }
 
     public boolean estaVazia(){
-        for (int i = 0; i < getTamanho(); i++) {
-            if(getInfo()[i] != 0){
-                return false;
-            }
-        }
-        return true;
+        if(getTamanho() == 0){
+            return true;
+        }        
+        return false;
     }
     public String toString(){
         String stringContent = "";
         for (int i = 0; i < getTamanho(); i++) {
-            if (i == getTamanho()-1) {
-                stringContent += getInfo()[i];
-            } else{
-                stringContent += getInfo()[i] + ",";
+            if (i > 0) {
+                stringContent += ",";
             }
+            stringContent += getInfo()[i];
         }
         return stringContent;
     }
