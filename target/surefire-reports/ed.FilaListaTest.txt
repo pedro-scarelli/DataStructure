@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ed.FilaListaTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in ed.FilaListaTest
+inserir(ed.FilaListaTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError
+	at ed.FilaListaTest.inserir(FilaListaTest.java:33)
+

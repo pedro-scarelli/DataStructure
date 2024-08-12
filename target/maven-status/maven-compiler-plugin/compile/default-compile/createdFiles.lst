@@ -1,0 +1,15 @@
+ed/Pilhas/Pilha.class
+ed/filas/FilaLista.class
+ed/listaDupla/ListaDupla.class
+ed/Pilhas/PilhaVetor.class
+ed/ListaEstatica.class
+ed/ListaEncadeada/ListaEncadeada.class
+ed/filas/FilaVetor.class
+ed/Pilhas/PilhaCheiaException.class
+ed/ListaEncadeada/NoLista.class
+ed/filas/FilaVaziaException.class
+ed/filas/FilaCheiaException.class
+ed/filas/Fila.class
+ed/Pilhas/PilhaVaziaException.class
+ed/listaDupla/NoListaDupla.class
+ed/Pilhas/PilhaLista.class
