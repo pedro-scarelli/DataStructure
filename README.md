@@ -4,6 +4,7 @@ Este repositório contém uma implementação de diversas estruturas de dados e 
 
 ## Requisitos
 - Java 17
+- IDE
 
 ## Estruturas de Dados e Algoritmos Implementados
 
@@ -43,15 +44,20 @@ Para visualizar e testar as implementações, siga os passos abaixo:
    git clone https://github.com/pvscarelli/EstruturaDeDados.git
    cd EstruturaDeDados
    ```
+   Agora basta digitar o comando para abrir a pasta atual, que é a root do projeto na sua IDE, no vscode o comando seria:
+   
+   ```bash
+   code .
+   ```
 
-2. **Visualize as classes**
+3. **Visualize as classes**
    
    As implementações das classes estão localizadas na pasta src. Você pode explorar as classes e verificar o código.
 
-3. **Testando as classes**
+4. **Testando as classes**
 
    Os testes unitários estão na pasta tests, lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
 
 ```bash
-javac -d bin src/tests/*.java
+mvn test
 ```
