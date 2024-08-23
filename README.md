@@ -1,6 +1,9 @@
 # Estrutura de Dados
 
-Este repositório contém uma implementação de diversas estruturas de dados e algoritmos em Java, como parte de um projeto acadêmico da minha turma na faculdade. O objetivo é reproduzir as funcionalidades das classes nativas do Java com implementações próprias.
+Este repositório contém uma implementação de diversas estruturas de dados e algoritmos em Java, que fiz na matéria de Estrutura de Dados na faculdade. O objetivo é reproduzir e entender as funcionalidades das classes nativas do Java com implementações próprias.
+
+## Requisitos
+- Java 17
 
 ## Estruturas de Dados e Algoritmos Implementados
 
@@ -17,6 +20,7 @@ Este repositório contém uma implementação de diversas estruturas de dados e 
   - Fila com Vetor
 
 - **Árvores**:
+  - Árvores N-árias
   - Árvores Binárias
   - Busca em Árvores Binárias
 
@@ -33,7 +37,21 @@ Para visualizar e testar as implementações, siga os passos abaixo:
 
 1. **Clone o Repositório**
 
-   Abra um terminal e execute o comando abaixo para clonar o repositório:
+   Abra um terminal, navegue até a pasta que deseja clonar o projeto, e execute os comandos abaixo para clonar e navegar até o repositório:
 
    ```bash
    git clone https://github.com/pvscarelli/EstruturaDeDados.git
+   cd EstruturaDeDados
+   ```
+
+2. **Visualize as classes**
+   
+   As implementações das classes estão localizadas na pasta src. Você pode explorar as classes e verificar o código.
+
+3. **Testando as classes**
+
+   Os testes unitários estão na pasta tests, lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
+
+```bash
+javac -d bin src/tests/*.java
+```
