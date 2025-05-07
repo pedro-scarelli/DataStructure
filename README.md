@@ -12,7 +12,7 @@ Este repositório contém uma implementação de diversas estruturas de dados e 
 - **Listas**:
 
   - Lista Encadeada
-  - Lista Dupla
+  - Lista Duplamente Encadeada
 
 - **Pilhas**:
 
