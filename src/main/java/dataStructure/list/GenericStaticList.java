@@ -52,7 +52,7 @@ public class GenericStaticList <T>{
             }
         }
 
-        return -1;
+        return - 1;
     }
 
     public void pop(T value) {
@@ -81,24 +81,23 @@ public class GenericStaticList <T>{
         }
     }
 
-    //estudar
     public void popElements2(int start, int end) {
         if (start < 0 || start >= size || end < 0 || end >= size || start > end) {
-            throw new IllegalArgumentException("Índices de início ou end inválidos.");
+            throw new IllegalArgumentException("Invalid start or end indexes.");
         }
     
-        int elementosRemovidos = end - start + 1;
-        int novoTamanho = size - elementosRemovidos;
+        int removedElements = end - start + 1;
+        int newSize = size - removedElements;
     
         for (int i = end + 1; i < size; i++) {
-            info[i - elementosRemovidos] = info[i];
+            info[i - removedElements] = info[i];
         }
     
-        for (int i = novoTamanho; i < size; i++) {
+        for (int i = newSize; i < size; i++) {
             info[i] = null;
         }
     
-        size = novoTamanho;
+        size = newSize;
     }
 
     public void free() {
@@ -106,6 +105,7 @@ public class GenericStaticList <T>{
         size = 0;
     }
 
+    @SuppressWarnings("unchecked")
     public T getElement(int position) {
         if (position > getSize() || getInfo()[position] == null) {
             throw new IndexOutOfBoundsException();
@@ -121,22 +121,11 @@ public class GenericStaticList <T>{
 
         return false;
     }
-    @Override
-    public String toString() {
-        String stringContent = "";
-        for (int position = 0; position < getSize(); position++) {
-            if (position > 0) {
-                stringContent += ",";
-            }
-            stringContent += getInfo()[position];
-        }
-        return stringContent;
-    }
 
     public void invert() {
-        int tradeCount = getSize()/ 2;
+        int tradeCount = getSize() / 2;
         int left = 0;
-        int right = getSize() -1;
+        int right = getSize() - 1;
 
         while(tradeCount > 0) {
             Object backup = getInfo()[left];
@@ -148,6 +137,19 @@ public class GenericStaticList <T>{
 
             tradeCount--;
         }
+    }
+
+    @Override
+    public String toString() {
+        String stringContent = "";
+        for (int position = 0; position < getSize(); position++) {
+            if (position > 0) {
+                stringContent += ",";
+            }
+            stringContent += getInfo()[position];
+        }
+
+        return stringContent;
     }
 }
 

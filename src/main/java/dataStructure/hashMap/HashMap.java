@@ -7,6 +7,7 @@ public class HashMap<T> {
     
     private LinkedList<MapNode<T>> info [];
 
+    @SuppressWarnings("unchecked")
     public HashMap(int size) {
         info = (LinkedList<MapNode<T>>[]) new LinkedList[size];
     }
@@ -15,20 +16,22 @@ public class HashMap<T> {
         return key % info.length;
     }
 
-    public void push(int key, T dado) {
+    public void push(int key, T data) {
         int index = calculateHash(key);
         
-        if (info[index] == null)
+        if (info[index] == null) {
             info[index] = new LinkedList<>();
+        }
+
         MapNode<T> mapNode = new MapNode<>();
 
         mapNode.setKey(key);
-        mapNode.setInfo(dado);
+        mapNode.setInfo(data);
 
         info[index].push(mapNode);
     }
     
-    public void incluirTodos(HashMap<T> mapToInclude) {
+    public void includeAll(HashMap<T> mapToInclude) {
         for (LinkedList<MapNode<T>> position : mapToInclude.info) {
             if (position != null) {
                 ListNode<MapNode<T>> item = position.getFirst();

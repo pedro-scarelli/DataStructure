@@ -47,7 +47,7 @@ public class HashMapTest {
         Student student8 = new Student(17000, "Jack", LocalDate.of(1998, 11, 25));
         outroMapa.push(17000, student8);
 
-        mapa.incluirTodos(outroMapa);
+        mapa.includeAll(outroMapa);
 
         assertTrue(mapa.search(12000).equals(student));
         assertTrue(mapa.search(14000).equals(student2));

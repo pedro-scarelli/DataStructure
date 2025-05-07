@@ -1,3 +1,3 @@
 package dataStructure.queue.exceptions;
 
-public class FullQueueException extends RuntimeException{}
+public class FullQueueException extends RuntimeException { }

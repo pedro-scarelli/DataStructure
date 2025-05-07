@@ -6,33 +6,33 @@ import dataStructure.queue.exceptions.EmptyQueueException;
 
 public class ListQueue<T> implements Queue<T> {
 
-    private LinkedList<T> lista = new LinkedList<>();
+    private LinkedList<T> list = new LinkedList<>();
 
     @Override
     public void push(T info) {
-        lista.pushAtEnd(info);
+        list.pushAtEnd(info);
     }
 
     @Override
     public T pop() {
         T valor = peek();
-        lista.pop(valor);
+        list.pop(valor);
 
         return valor;
     }
 
     @Override
     public T peek() {
-        if (lista.isEmpty()) {
+        if (list.isEmpty()) {
             throw new EmptyQueueException();
         }
 
-        return lista.getFirst().getInfo();
+        return list.getFirst().getInfo();
     }
 
     @Override
     public boolean isEmpty() {
-        return lista.isEmpty();
+        return list.isEmpty();
     }
 
     @Override
@@ -47,9 +47,9 @@ public class ListQueue<T> implements Queue<T> {
     @Override
     public String toString() {
         String stringContent = "";
-        ListNode<T> node = lista.getFirst();
+        ListNode<T> node = list.getFirst();
         while(node != null) {
-            if (node != lista.getFirst()) {
+            if (node != list.getFirst()) {
                 stringContent += ",";
             }
             stringContent += node.getInfo();

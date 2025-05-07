@@ -58,9 +58,9 @@ public class StaticList {
     public void pop(int value) {
         int position = search(value);
 
-        if (position > -1) {
-            for (int i = position+1; i < getSize(); i++) {
-                getInfo()[i-1] = getInfo()[i];
+        if (position > - 1) {
+            for (int i = position + 1; i < getSize(); i++) {
+                getInfo()[i - 1] = getInfo()[i];
             }
             size--;        
         }

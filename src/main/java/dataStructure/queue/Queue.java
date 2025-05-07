@@ -11,5 +11,4 @@ public interface Queue<T> {
     public T pop();
     
     public void free();
-
 }

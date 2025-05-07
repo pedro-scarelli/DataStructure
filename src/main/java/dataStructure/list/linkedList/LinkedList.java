@@ -1,6 +1,7 @@
 package dataStructure.list.linkedList;
 
 public class LinkedList<T> {
+
     private ListNode<T> first;
     private ListNode<T> last;
 

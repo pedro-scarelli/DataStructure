@@ -2,6 +2,7 @@ package dataStructure.list;
 
 public class OrderedList<T extends Comparable<T>> extends ListAbstract<T> {
     
+    @SuppressWarnings("unchecked")
     @Override
     public void push(T value) {
         Object[] info = getInfo();
@@ -39,6 +40,7 @@ public class OrderedList<T extends Comparable<T>> extends ListAbstract<T> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public int search(T value) {
         Object[] info = getInfo();
@@ -58,6 +60,7 @@ public class OrderedList<T extends Comparable<T>> extends ListAbstract<T> {
                 }
             } 
         }
+        
         return -1;
     }
 }

@@ -3,12 +3,13 @@ package dataStructure.stack;
 import dataStructure.stack.exceptions.EmptyStackException;
 import dataStructure.stack.exceptions.FullStackException;
 
-public class ArrayStack<T> implements Stack<T>{
+public class ArrayStack<T> implements Stack<T> {
 
     private Object info[];
     private int limit;
     private int size;
 
+    @SuppressWarnings("unchecked")
     public ArrayStack(int limit) {
         info = (T[])new Object[limit];
         this.limit = limit;
@@ -19,10 +20,10 @@ public class ArrayStack<T> implements Stack<T>{
     public void push(T value) {
         if (size == limit) {
             throw new FullStackException();
-        } else {
-            info[size] = value;
-            size++;
         }
+
+        info[size] = value;
+        size++;
     }
 
     @Override
@@ -34,12 +35,14 @@ public class ArrayStack<T> implements Stack<T>{
         return value;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public T peek() {
         if (isEmpty()) {
             throw new EmptyStackException();
         } 
-        return (T)info[size-1];
+
+        return (T) info[size-1];
     }
 
     @Override
@@ -70,6 +73,7 @@ public class ArrayStack<T> implements Stack<T>{
         return result;
     } 
     
+    @SuppressWarnings("unchecked")
     public void concatenate(ArrayStack<T> stackToConcatenate) {
         if (size + stackToConcatenate.size > limit) {
             throw new RuntimeException("Não há espaços para empilhar todos os dados");
@@ -80,8 +84,9 @@ public class ArrayStack<T> implements Stack<T>{
         }
     }
 
+    @SuppressWarnings("unchecked")
     public void setLimit(int limit) {
         this.limit = limit;
-        info = (T[])new Object[limit];
+        info = (T[]) new Object[limit];
     }
 }

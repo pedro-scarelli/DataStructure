@@ -1,6 +1,7 @@
 package dataStructure.list.doublyLinkedList;
 
 public class DoublyLinkedListNode<T> {
+
     private T info;
     private DoublyLinkedListNode<T> next;
     private DoublyLinkedListNode<T> previous;

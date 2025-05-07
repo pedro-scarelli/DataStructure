@@ -10,6 +10,7 @@ public class ArrayQueue<T> implements Queue<T> {
     public int size;
     public int start;
 
+    @SuppressWarnings("unchecked")
     public ArrayQueue(int limit) {
         info = (T[])new Object[limit];
         this.limit = limit;
@@ -61,6 +62,7 @@ public class ArrayQueue<T> implements Queue<T> {
         } catch(EmptyQueueException e) { }
     }
 
+    @SuppressWarnings("unchecked")
     public void shrink() {
         T[] novoInfo = (T[])new Object[size];
 
@@ -76,6 +78,24 @@ public class ArrayQueue<T> implements Queue<T> {
 
     public int getLimit() {
         return limit;
+    }
+
+    public ArrayQueue<T> createConcatenatedQueue(ArrayQueue<T> queueToBeConcatenated) {
+        ArrayQueue<T> concatenadQueue = new ArrayQueue<>(limit + queueToBeConcatenated.getLimit());
+
+        int index = this.start;
+        for (int i = 0; i < this.size; i++) {
+            concatenadQueue.push(info[index]);
+            index = (index + 1) % concatenadQueue.limit;
+        }
+
+        index = queueToBeConcatenated.start;
+        for (int i = 0; i < queueToBeConcatenated.size; i++) {
+            concatenadQueue.push(queueToBeConcatenated.info[index]);
+            index = (start + 1) % concatenadQueue.limit;
+        }
+
+        return concatenadQueue;
     }
     
     @Override
@@ -93,24 +113,4 @@ public class ArrayQueue<T> implements Queue<T> {
 
         return result;
     } 
-
-    public ArrayQueue<T> createConcatenatedQueue(ArrayQueue<T> queueToBeConcatenated) {
-        ArrayQueue<T> concatenadQueue = new ArrayQueue<>(limit + queueToBeConcatenated.getLimit());
-
-
-        int index = this.start;
-        for (int i = 0; i < this.size; i++) {
-            concatenadQueue.push(info[index]);
-            index = (index + 1) % concatenadQueue.limit;
-        }
-
-        index = queueToBeConcatenated.start;
-        for (int i = 0; i < queueToBeConcatenated.size; i++) {
-            concatenadQueue.push(queueToBeConcatenated.info[index]);
-            index = (start + 1) % concatenadQueue.limit;
-        }
-        System.out.println(concatenadQueue.size);
-
-        return concatenadQueue;
-    }
 }

@@ -1,6 +1,7 @@
 package dataStructure.list.doublyLinkedList;
 
 public class DoublyLinkedList<T> {
+
     private DoublyLinkedListNode<T> first;
 
     public DoublyLinkedList() {
@@ -24,12 +25,13 @@ public class DoublyLinkedList<T> {
     }
 
     public DoublyLinkedListNode<T> search(T info) {
-        DoublyLinkedListNode<T> p = first;
-        while(p != null) {
-            if (p.getInfo().equals(info)) {
-                return p;
+        DoublyLinkedListNode<T> pivot = first;
+
+        while(pivot != null) {
+            if (pivot.getInfo().equals(info)) {
+                return pivot;
             }
-            p = p.getNext();
+            pivot = pivot.getNext();
         }
 
         return null;

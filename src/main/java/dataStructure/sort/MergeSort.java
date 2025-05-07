@@ -16,6 +16,7 @@ public class MergeSort<T extends Comparable<T>> extends SortAbstract<T> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public void merge(int start, int end, int middle) {
         T[] info = getInfo();
         int leftSize = middle - start + 1;

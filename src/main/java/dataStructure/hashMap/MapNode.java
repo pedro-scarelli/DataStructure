@@ -18,6 +18,7 @@ public class MapNode <T> {
         this.info = info;
     }
 
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public boolean equals(Object object) {
         if (this == object)
             return true;
