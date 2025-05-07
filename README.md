@@ -50,7 +50,7 @@ Para visualizar e testar as implementações, siga os passos abaixo:
    Abra um terminal, navegue até a pasta que deseja clonar o projeto, e execute os comandos abaixo para clonar e navegar até o repositório:
 
    ```bash
-   git clone https://github.com/pvscarelli/EstruturaDeDados.git
+   git clone https://github.com/pedro-scarelli/DataStructure.git
    cd DataStructure
    ```
 
