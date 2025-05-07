@@ -2,25 +2,33 @@
 
 Este repositório contém uma implementação de diversas estruturas de dados e algoritmos em Java, que fiz na matéria de Estrutura de Dados na faculdade. O objetivo é reproduzir e entender as funcionalidades das classes nativas do Java com implementações próprias. Implementando também testes unitários com JUnit para todas as classes.
 
+---
 ## Requisitos
-- Java 17
-- IDE
 
-## Estruturas de Dados e Algoritmos Implementados
+- Java 17
+- Maven ( ou Graddle, porém o tutorial a seguir é com Maven)
+
+---
+
+## Conteúdo:
 
 - **Listas**:
+
   - Lista Encadeada
-  - Lista Dupla
+  - Lista Duplamente Encadeada
 
 - **Pilhas**:
+
   - Pilha com Lista
   - Pilha com Vetor
 
 - **Filas**:
+
   - Fila com Lista
   - Fila com Vetor
 
 - **Árvores**:
+
   - Árvores N-árias
   - Árvores Binárias
   - Busca em Árvores Binárias
@@ -31,6 +39,7 @@ Este repositório contém uma implementação de diversas estruturas de dados e 
   - Merge Sort
   - Bubble Sort
   - Quick Sort
+---
 
 ## Como Visualizar e Testar
 
@@ -41,23 +50,27 @@ Para visualizar e testar as implementações, siga os passos abaixo:
    Abra um terminal, navegue até a pasta que deseja clonar o projeto, e execute os comandos abaixo para clonar e navegar até o repositório:
 
    ```bash
-   git clone https://github.com/pvscarelli/EstruturaDeDados.git
-   cd EstruturaDeDados
-   ```
-   Agora basta digitar o comando para abrir a pasta atual, que é a root do projeto na sua IDE, no vscode o comando seria:
-   
-   ```bash
-   code .
+   git clone https://github.com/pedro-scarelli/DataStructure.git
+   cd DataStructure
    ```
 
-3. **Visualize as classes**
-   
-   As implementações das classes estão localizadas na pasta src. Você pode explorar as classes e verificar o código.
+   Agora basta digitar o comando para abrir a pasta atual, que é a raiz do projeto na sua IDE.
+
+2. **Visualize as classes**
+
+   As implementações das classes estão localizadas na pasta "src".
+
+3. **Instalando as dependências**
+
+   Na root do projeto rode o seguinte comando:
+   ```bash
+   mvn compile
+   ```
 
 4. **Testando as classes**
 
-   Os testes unitários estão na pasta tests, lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
+   Implementei bastante testes unitários, e você pode visualizar eles na pasta "tests", lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
 
-```bash
-mvn test
-```
+    ```bash
+    mvn test
+    ```

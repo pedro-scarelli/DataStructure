@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: ed.FilaVetorTest
--------------------------------------------------------------------------------
-Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.081 s <<< FAILURE! - in ed.FilaVetorTest
-concatenacao(ed.FilaVetorTest)  Time elapsed: 0.012 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<10,20,[3]0,40,50> but was:<10,20,[2]0,40,50>
-	at ed.FilaVetorTest.concatenacao(FilaVetorTest.java:96)
-
