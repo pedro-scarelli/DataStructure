@@ -1,6 +1,6 @@
 # Estrutura de Dados
 
-Este repositório contém uma implementação de diversas estruturas de dados e algoritmos em Java, que fiz na matéria de Estrutura de Dados na faculdade. O objetivo é reproduzir e entender as funcionalidades das classes nativas do Java com implementações próprias. Implementando também testes unitários com JUnit para todas as classes.
+Este repositório contém uma implementação de diversas estruturas de dados e algoritmos em Java. O objetivo é reproduzir e entender as funcionalidades das classes nativas do Java com implementações próprias. Implementando também testes unitários com JUnit para todas as classes.
 
 ---
 ## Requisitos
