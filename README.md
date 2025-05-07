@@ -5,9 +5,9 @@ Este repositório contém uma implementação de diversas estruturas de dados e 
 ## Requisitos
 
 - Java 17
-- IDE
+- Maven ( ou Graddle, porém o tutorial a seguir é com Maven)
 
-## Estruturas de Dados e Algoritmos Implementados
+## Conteúdo:
 
 - **Listas**:
 
@@ -50,20 +50,23 @@ Para visualizar e testar as implementações, siga os passos abaixo:
    cd DataStructure
    ```
 
-   Agora basta digitar o comando para abrir a pasta actual, que é a root do projeto na sua IDE, no VScode o comando seria:
-
-   ```bash
-   code .
-   ```
+   Agora basta digitar o comando para abrir a pasta atual, que é a raiz do projeto na sua IDE.
 
 2. **Visualize as classes**
 
-   As implementações das classes estão localizadas na pasta src. Você pode explorar as classes e verificar o código.
+   As implementações das classes estão localizadas na pasta "src".
 
-3. **Testando as classes**
+3. **Instalando as dependências**
 
-   Os testes unitários estão na pasta tests, lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
+   Na root do projeto rode o seguinte comando:
+   ```bash
+   mvn compile
+   ``  
 
-```bash
-mvn test
-```
+4. **Testando as classes**
+
+   Implementei bastante testes unitários, e você pode visualizar eles na pasta "tests", lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
+
+  ```bash
+  mvn test
+  ```
