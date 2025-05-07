@@ -2,10 +2,13 @@
 
 Este repositório contém uma implementação de diversas estruturas de dados e algoritmos em Java, que fiz na matéria de Estrutura de Dados na faculdade. O objetivo é reproduzir e entender as funcionalidades das classes nativas do Java com implementações próprias. Implementando também testes unitários com JUnit para todas as classes.
 
+---
 ## Requisitos
 
 - Java 17
 - Maven ( ou Graddle, porém o tutorial a seguir é com Maven)
+
+---
 
 ## Conteúdo:
 
@@ -36,6 +39,7 @@ Este repositório contém uma implementação de diversas estruturas de dados e 
   - Merge Sort
   - Bubble Sort
   - Quick Sort
+---
 
 ## Como Visualizar e Testar
 
@@ -67,6 +71,6 @@ Para visualizar e testar as implementações, siga os passos abaixo:
 
    Implementei bastante testes unitários, e você pode visualizar eles na pasta "tests", lá você pode visualizar e testar os testes um por um e executá-los todos de uma vez rodando o comando:
 
-  ```bash
-  mvn test
-  ```
+    ```bash
+    mvn test
+    ```
