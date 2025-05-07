@@ -61,7 +61,7 @@ Para visualizar e testar as implementações, siga os passos abaixo:
    Na root do projeto rode o seguinte comando:
    ```bash
    mvn compile
-   ``  
+   ```
 
 4. **Testando as classes**
 
