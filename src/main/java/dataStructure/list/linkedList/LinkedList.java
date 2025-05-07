@@ -59,35 +59,37 @@ public class LinkedList<T> {
     }
 
     public ListNode<T> search(T info) {
-        ListNode<T> p = first;
-        while(p != null) {
-            if (p.getInfo().equals(info)) {
-                return p;
+        ListNode<T> pivot = first;
+        while(pivot != null) {
+            if (pivot.getInfo().equals(info)) {
+                return pivot;
             }
-            p = p.getNext();
+            pivot = pivot.getNext();
         } 
 
         return null;
     }
 
     public void pop(T info) {
-        ListNode<T> previous = null;
-        ListNode<T> u = last;
+        ListNode<T> pivotPreviousNode = null;
+        ListNode<T> pivot = first;
         
-        while(u != null && !u.getInfo().equals(info)) {
-            previous = u;
-            u = u.getNext();
+        while(pivot != null && !pivot.getInfo().equals(info)) {
+            pivotPreviousNode = pivot;
+            pivot = pivot.getNext();
         } 
 
-        if (u != null) {
-            if (u == first) {
+        if (pivot != null) {
+            if (pivot == first) {
                 first = first.getNext();
-            } else if (u == last) {
-                previous.setNext(null);
-                last = previous;
-            } else {
-                previous.setNext(u.getNext());
+                return;
+            } else if (pivot == last) {
+                pivotPreviousNode.setNext(null);
+                last = pivotPreviousNode;
+                return;
             }
+
+            pivotPreviousNode.setNext(pivot.getNext());
         }
     }   
 
@@ -138,13 +140,5 @@ public class LinkedList<T> {
         }
 
         return stringContent;
-    }
-
-    public void setFirst(ListNode<T> first) {
-        this.first = first;
-    }
-
-    public ListNode<T> getLast() {
-        return last;
     }
 }

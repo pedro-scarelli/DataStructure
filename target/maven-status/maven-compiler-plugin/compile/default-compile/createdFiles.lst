@@ -8,7 +8,6 @@ dataStructure/sort/OptimizedBubbleSort.class
 dataStructure/tree/BinaryTree.class
 dataStructure/search/SearchBinaryTree.class
 dataStructure/queue/exceptions/FullQueueException.class
-dataStructure/hash/HashMap.class
 dataStructure/stack/exceptions/EmptyStackException.class
 dataStructure/stack/ListStack.class
 dataStructure/list/GenericStaticList.class
@@ -16,7 +15,6 @@ dataStructure/sort/SortAbstract.class
 dataStructure/queue/ListQueue.class
 dataStructure/queue/Queue.class
 dataStructure/queue/exceptions/EmptyQueueException.class
-dataStructure/hash/MapNode.class
 dataStructure/stack/ArrayStack.class
 dataStructure/stack/exceptions/FullStackException.class
 dataStructure/list/StaticList.class

@@ -1,12 +1,7 @@
-package dataStructure;
+package dataStructure.sort;
 
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
-
-import dataStructure.sort.BubbleSort;
-import dataStructure.sort.MergeSort;
-import dataStructure.sort.OptimizedBubbleSort;
-import dataStructure.sort.QuickSort;
 
 public class SortTest {
     

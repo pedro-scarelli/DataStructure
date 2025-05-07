@@ -1,4 +1,4 @@
-package dataStructure;
+package dataStructure.stack;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,7 +6,6 @@ import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
-import dataStructure.stack.*;
 import dataStructure.stack.exceptions.EmptyStackException;
 import dataStructure.stack.exceptions.FullStackException;
 

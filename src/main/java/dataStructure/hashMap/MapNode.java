@@ -1,4 +1,4 @@
-package dataStructure.hash;
+package dataStructure.hashMap;
 
 public class MapNode <T> {
     

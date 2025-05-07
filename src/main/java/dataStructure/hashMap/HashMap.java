@@ -1,4 +1,4 @@
-package dataStructure.hash;
+package dataStructure.hashMap;
 
 import dataStructure.list.linkedList.LinkedList;
 import dataStructure.list.linkedList.ListNode;

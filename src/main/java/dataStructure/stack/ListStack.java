@@ -26,7 +26,7 @@ public class ListStack<T> implements Stack<T>{
             throw new EmptyStackException();
         }
 
-        return list.getLast().getInfo();
+        return list.getFirst().getInfo();
     }
 
     @Override

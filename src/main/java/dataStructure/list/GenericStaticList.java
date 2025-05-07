@@ -111,7 +111,7 @@ public class GenericStaticList <T>{
             throw new IndexOutOfBoundsException();
         }
 
-        return (T)getInfo()[position]; 
+        return (T) getInfo()[position]; 
     }
 
     public boolean isEmpty() {

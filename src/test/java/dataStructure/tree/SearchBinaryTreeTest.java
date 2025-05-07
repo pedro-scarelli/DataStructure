@@ -1,4 +1,4 @@
-package dataStructure;
+package dataStructure.tree;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

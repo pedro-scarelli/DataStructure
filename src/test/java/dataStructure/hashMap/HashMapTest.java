@@ -1,11 +1,10 @@
-package dataStructure;
+package dataStructure.hashMap;
 
 import java.time.LocalDate;
 
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
-import dataStructure.hash.HashMap;
 import dataStructure.helpers.Student;
 
 public class HashMapTest {

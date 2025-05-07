@@ -1,12 +1,9 @@
-package dataStructure;
+package dataStructure.tree;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-
-import dataStructure.tree.Tree;
-import dataStructure.tree.TreeNode;
 
 public class TreeTest {
     

@@ -1,12 +1,10 @@
-package dataStructure;
+package dataStructure.list;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 
 import org.junit.Test;
-
-import dataStructure.list.GenericStaticList;
 
 public class GenericStaticListTest {
     GenericStaticList <Integer> list = new GenericStaticList<>();

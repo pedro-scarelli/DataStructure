@@ -1,11 +1,9 @@
-package dataStructure;
+package dataStructure.stack;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-
-import dataStructure.stack.ListStack;
 
 public class ListStackTest {
     ListStack<Integer> listStack = new ListStack<>();

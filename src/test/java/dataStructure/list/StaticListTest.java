@@ -1,11 +1,9 @@
-package dataStructure;
+package dataStructure.list;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 import org.junit.Test;
-
-import dataStructure.list.StaticList;
 
 public class StaticListTest {
     StaticList list = new StaticList();

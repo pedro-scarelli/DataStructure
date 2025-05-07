@@ -1,4 +1,4 @@
-package dataStructure;
+package dataStructure.search;
 
 import static org.junit.Assert.assertEquals;
 
