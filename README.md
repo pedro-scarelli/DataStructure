@@ -47,7 +47,7 @@ Para visualizar e testar as implementações, siga os passos abaixo:
 
    ```bash
    git clone https://github.com/pvscarelli/EstruturaDeDados.git
-   cd EstruturaDeDados
+   cd DataStructure
    ```
 
    Agora basta digitar o comando para abrir a pasta actual, que é a root do projeto na sua IDE, no VScode o comando seria:
